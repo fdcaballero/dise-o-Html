@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Registro estudiante</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+   <section>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+        Crear estudiante
+    </button>
+      
+      <!-- The Modal -->
+      <div class="modal " id="myModal">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Nuevo alumno</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body ">
+              <form action="" method="post" class="form">
+                <section class="container">  
+                    <section class="row">
+                        <section class="form-group col">
+
+                            <label for="nombre">* Nombre </label>
+                            <input type="text" name="nombre"  class="form-control " required>
+                        
+                            <label for="apellido1">* Apellido 1</label>
+                            <input type="text" name="apellido1"  class="form-control" required>
+                            
+                            <label for="apellido2">Apellido 2 </label>
+                            <input type="text" name="apellido2"  class="form-control">
+                        
+                            <label for="nif">* NIF </label>
+                            <input type="text" name="nif"  class="form-control" required>
+                            
+                            <label for="telefono">Telefono </label>
+                            <input type="tel" name="telefono"  class="form-control">
+                        
+                            <label for="correo">Correo </label>
+                            <input type="email" name="correo"  class="form-control">
+
+                            <label for="curso">Curso </label>
+                            <select name="curso" class="form-control custom-select" required>
+                                <option selected>Choose...</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            
+                            <div class="form-check">
+                              <label class="form-check-label">
+                                    
+                                <input type="checkbox" class="form-check-input" name="repetidor" id="" value="checkedValue" >
+                                * Repetidor
+                              </label>
+                            </div>
+                            
+                            <label for="fecha de alta">Fecha de alta </label>
+                            <input type="date" name="fecha de alta"  class="form-control">
+                            
+                            <label for="fecha de baja">Fecha de baja </label>
+                            <input type="text" name="fecha de baja"  class="form-control">
+                            
+                            <label for="observaciones">Observaciones </label>
+                            <textarea name="observaciones"  class="form-control " rows=4></textarea>
+                        </section>
+
+                        <section class="form-group col" id="responsable">
+                            <h4>Responsable</h4>
+                            <label for="nombre">* Nombre </label>
+                            <input type="text" name="nombre"  class="form-control" required>
+
+                            <label for="apellido1">* Apellido 1</label>
+                            <input type="text" name="apellido1"  class="form-control" required>
+                                
+                            <label for="apellido2">Apellido 2 </label>
+                            <input type="text" name="apellido2"  class="form-control">
+                            
+                            <label for="nif">* NIF </label>
+                            <input type="text" name="nif"  class="form-control" required>
+                                
+                            <label for="telefono">* Telefono </label>
+                            <input type="tel" name="telefono"  class="form-control" required>
+                            
+                            <label for="correo">* Correo </label>
+                            <input type="email" name="correo"  class="form-control" required>
+                            <h5><br>** Nota: Los datos del responsable se rellenarán en caso de que sea necesario</h5>
+
+                        </section>
+                    </section>
+                </section>
+              </form>
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+
+              <button type="button" class="btn btn-primary ">Crear</button>
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+              
+            </div>
+      
+          </div>
+        </div>
+      </div>
+   </section>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
